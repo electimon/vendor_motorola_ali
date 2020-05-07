@@ -347,9 +347,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/ali/proprietary/vendor/lib/egl/libQTapGLES.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libQTapGLES.so \
     vendor/motorola/ali/proprietary/vendor/lib/egl/libq3dtools_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libq3dtools_adreno.so \
     vendor/motorola/ali/proprietary/vendor/lib/hw/activity_recognition.msm8953.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/activity_recognition.msm8953.so \
+    vendor/motorola/ali/proprietary/vendor/lib/hw/sound_trigger.primary.msm8953.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sound_trigger.primary.msm8953.so \
     vendor/motorola/ali/proprietary/vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so \
-    vendor/motorola/ali/proprietary/vendor/lib/hw/audio.primary.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.default.so \
-    vendor/motorola/ali/proprietary/vendor/lib/hw/audio.primary.msm8953.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.msm8953.so \
     vendor/motorola/ali/proprietary/vendor/lib/hw/camera.msm8953.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/camera.msm8953.so \
     vendor/motorola/ali/proprietary/vendor/lib/hw/keystore.msm8953.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/keystore.msm8953.so \
     vendor/motorola/ali/proprietary/vendor/lib/hw/sound_trigger.primary.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sound_trigger.primary.default.so \
@@ -392,6 +391,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/ali/proprietary/vendor/lib/libOpenCL.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOpenCL.so \
     vendor/motorola/ali/proprietary/vendor/lib/libQSEEComAPI.so:$(TARGET_COPY_OUT_VENDOR)/lib/libQSEEComAPI.so \
     vendor/motorola/ali/proprietary/vendor/lib/libRSDriver_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/libRSDriver_adreno.so \
+    vendor/motorola/ali/proprietary/vendor/lib/libmotext_inf.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmotext_inf.so \
     vendor/motorola/ali/proprietary/vendor/lib/lib_mot_app6_metadata.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_mot_app6_metadata.so \
     vendor/motorola/ali/proprietary/vendor/lib/lib_mot_led_calibration.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_mot_led_calibration.so \
     vendor/motorola/ali/proprietary/vendor/lib/lib_motsensorlistener.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_motsensorlistener.so \
@@ -411,7 +411,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/ali/proprietary/vendor/lib/libactuator_mot_ak7371_mono.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_mot_ak7371_mono.so \
     vendor/motorola/ali/proprietary/vendor/lib/libactuator_pseudo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_pseudo.so \
     vendor/motorola/ali/proprietary/vendor/lib/libadiertac.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadiertac.so \
-    vendor/motorola/ali/proprietary/vendor/lib/libadm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadm.so \
     vendor/motorola/ali/proprietary/vendor/lib/libadreno_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadreno_utils.so \
     vendor/motorola/ali/proprietary/vendor/lib/libadsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadsp_default_listener.so \
     vendor/motorola/ali/proprietary/vendor/lib/libadsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadsprpc.so \
@@ -945,7 +944,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/ali/proprietary/vendor/lib/libkeystore-wifi-hidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libkeystore-wifi-hidl.so \
     vendor/motorola/ali/proprietary/vendor/lib/libllvm-glnext.so:$(TARGET_COPY_OUT_VENDOR)/lib/libllvm-glnext.so \
     vendor/motorola/ali/proprietary/vendor/lib/libllvm-qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libllvm-qcom.so \
-    vendor/motorola/ali/proprietary/vendor/lib/liblog_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblog_vendor.so \
     vendor/motorola/ali/proprietary/vendor/lib/liblqe.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblqe.so \
     vendor/motorola/ali/proprietary/vendor/lib/libmdmdetect.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmdmdetect.so \
     vendor/motorola/ali/proprietary/vendor/lib/libmm-color-convertor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmm-color-convertor.so \
@@ -1082,7 +1080,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/ali/proprietary/vendor/lib/libmot_afd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmot_afd.so \
     vendor/motorola/ali/proprietary/vendor/lib/libmot_gpu_mapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmot_gpu_mapper.so \
     vendor/motorola/ali/proprietary/vendor/lib/libmot_lux_standardization.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmot_lux_standardization.so \
-    vendor/motorola/ali/proprietary/vendor/lib/libmotaudioutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmotaudioutils.so \
     vendor/motorola/ali/proprietary/vendor/lib/libmotimager_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmotimager_utils.so \
     vendor/motorola/ali/proprietary/vendor/lib/libmotocalibration.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmotocalibration.so \
     vendor/motorola/ali/proprietary/vendor/lib/libnetmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnetmgr.so \
@@ -1134,14 +1131,10 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/ali/proprietary/vendor/lib/libseemore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libseemore.so \
     vendor/motorola/ali/proprietary/vendor/lib/libsensor1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensor1.so \
     vendor/motorola/ali/proprietary/vendor/lib/libsensor_reg.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensor_reg.so \
-    vendor/motorola/ali/proprietary/vendor/lib/libsensorndkbridge.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensorndkbridge.so \
     vendor/motorola/ali/proprietary/vendor/lib/libstdc++.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstdc++.so \
-    vendor/motorola/ali/proprietary/vendor/lib/libtinycompress.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinycompress.so \
-    vendor/motorola/ali/proprietary/vendor/lib/libtinycompress_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinycompress_vendor.so \
     vendor/motorola/ali/proprietary/vendor/lib/libtinyxml2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinyxml2_1.so \
     vendor/motorola/ali/proprietary/vendor/lib/libtrueportrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtrueportrait.so \
     vendor/motorola/ali/proprietary/vendor/lib/libubifocus.so:$(TARGET_COPY_OUT_VENDOR)/lib/libubifocus.so \
-    vendor/motorola/ali/proprietary/vendor/lib/libunshorten.so:$(TARGET_COPY_OUT_VENDOR)/lib/libunshorten.so \
     vendor/motorola/ali/proprietary/vendor/lib/libvqzip.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvqzip.so \
     vendor/motorola/ali/proprietary/vendor/lib/libwfdcommonutils_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdcommonutils_proprietary.so \
     vendor/motorola/ali/proprietary/vendor/lib/libwfdhaldsmanager.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdhaldsmanager.so \
@@ -1163,7 +1156,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/ali/proprietary/vendor/lib/sensor_calibrate.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensor_calibrate.so \
     vendor/motorola/ali/proprietary/vendor/lib/sensors.rp.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensors.rp.so \
     vendor/motorola/ali/proprietary/vendor/lib/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensors.ssc.so \
-    vendor/motorola/ali/proprietary/vendor/lib/soundfx/libspeakerbundle.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libspeakerbundle.so \
     vendor/motorola/ali/proprietary/vendor/lib/soundfx/libswdap.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libswdap.so \
     vendor/motorola/ali/proprietary/vendor/lib/vendor.display.color@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.color@1.0.so \
     vendor/motorola/ali/proprietary/vendor/lib/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.postproc@1.0.so \
@@ -1218,7 +1210,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/ali/proprietary/vendor/lib/vendor.qti.imsrtpservice@2.1-service-Impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.imsrtpservice@2.1-service-Impl.so \
     vendor/motorola/ali/proprietary/vendor/lib/vendor.qti.imsrtpservice@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.imsrtpservice@2.1.so \
     vendor/motorola/ali/proprietary/vendor/lib/vendor.qti.voiceprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.voiceprint@1.0.so \
-    vendor/motorola/ali/proprietary/vendor/lib/vndk/libtinyalsa.so:$(TARGET_COPY_OUT_VENDOR)/lib/vndk/libtinyalsa.so \
     vendor/motorola/ali/proprietary/vendor/lib64/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.ant@1.0.so \
     vendor/motorola/ali/proprietary/vendor/lib64/com.qualcomm.qti.imscmservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.imscmservice@1.0.so \
     vendor/motorola/ali/proprietary/vendor/lib64/com.qualcomm.qti.imscmservice@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.imscmservice@2.0.so \
@@ -1233,6 +1224,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/ali/proprietary/vendor/lib64/egl/libQTapGLES.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libQTapGLES.so \
     vendor/motorola/ali/proprietary/vendor/lib64/egl/libq3dtools_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libq3dtools_adreno.so \
     vendor/motorola/ali/proprietary/vendor/lib64/hw/activity_recognition.msm8953.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/activity_recognition.msm8953.so \
+    vendor/motorola/ali/proprietary/vendor/lib64/hw/sound_trigger.primary.msm8953.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sound_trigger.primary.msm8953.so \
     vendor/motorola/ali/proprietary/vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so \
     vendor/motorola/ali/proprietary/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so \
     vendor/motorola/ali/proprietary/vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so \
